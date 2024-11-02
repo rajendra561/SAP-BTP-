@@ -1,0 +1,12 @@
+---
+applications:
+- name: dbboot_new_new
+  path: target\dbboot_new_new-0.0.1-SNAPSHOT.war
+  random-route: true
+  memory: 900M
+  buildpacks: 
+  - sap_java_buildpack
+  services:
+  - mysql
+
+  

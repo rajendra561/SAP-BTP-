@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "f3690a5c-d505-424a-944b-529715853aaa",
+		"name": "SAP BTP Training",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14691148"
+	},
+	"item": [
+		{
+			"name": "Read All Vendor Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/vendors"
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Vendor by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/vendor/9d30d0ea-54eb-4429-b839-d55eed16a493"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new vendor data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"\",\r\n    \"companyName\": \"SAP\",\r\n    \"contactPerson\": \"Sushma\",\r\n    \"firstName\": \"Vinutha\",\r\n    \"lastName\": \"Kottipalli\",\r\n    \"website\": \"www.sap.com\",\r\n    \"email\": \"vinutha@gmail.com\",\r\n    \"status\": 1,\r\n    \"regDate\": \"2024-01-01\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/vendors"
+			},
+			"response": []
+		},
+		{
+			"name": "Change vendor Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"companyName\": \"IBM incorporation\",\r\n    \"contactPerson\": \"Ananya\",\r\n    \"firstName\": \"Roger\",\r\n    \"lastName\": \"Morrison\",\r\n    \"website\": \"www.ibm.com\",\r\n    \"email\": \"roger@ibm.com\",\r\n    \"status\": 1,\r\n    \"regDate\": \"2024-02-01\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/vendor/9d30d0ea-54eb-4429-b839-d55eed16a493"
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Vendor data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"companyName\": \"IBM incorporation\",\r\n    \"contactPerson\": \"Ananya\",\r\n    \"firstName\": \"Roger\",\r\n    \"lastName\": \"Morrison\",\r\n    \"website\": \"www.ibm.com\",\r\n    \"email\": \"roger@ibm.com\",\r\n    \"status\": 1,\r\n    \"regDate\": \"2024-02-01\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/vendor/9d30d0ea-54eb-4429-b839-d55eed16a493"
+			},
+			"response": []
+		},
+		{
+			"name": "Search By Company Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vendor/search?company=SAP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"search"
+					],
+					"query": [
+						{
+							"key": "company",
+							"value": "SAP"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lookup employee by Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/vendor/lookup/gmail"
+			},
+			"response": []
+		},
+		{
+			"name": "Create vendor and address using association",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"\",\r\n    \"companyName\": \"SAP\",\r\n    \"contactPerson\": \"Prakash\",\r\n    \"firstName\": \"Lohit\",\r\n    \"lastName\": \"Kumar\",\r\n    \"website\": \"www.sap.com\",\r\n    \"email\": \"prakash@sap.com\",\r\n    \"status\": 1,\r\n    \"regDate\": \"2024-01-01\",\r\n    \"addresses\" :[\r\n        {\r\n            \"addressType\":\"H\",\r\n            \"street\":\"2nd Block, BEML Layout\",\r\n            \"city\": \"Bangalore\",\r\n            \"country\": \"IN\",\r\n            \"region\": \"APJ\"\r\n        },\r\n        {\r\n            \"addressType\":\"O\",\r\n            \"street\":\"Dieter Hopp Alle\",\r\n            \"city\": \"Waldorf\",\r\n            \"country\": \"DE\",\r\n            \"region\": \"EMEA\"\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/vendors"
+			},
+			"response": []
+		}
+	]
+}

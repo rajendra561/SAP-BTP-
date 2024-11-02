@@ -1,0 +1,57 @@
+[
+    {
+        "code": "101fd587-cef6-4ce1-a176-25715e8e7eaf",
+        "companyName": "Anubhav Trainings",
+        "contactPerson": "Anubhav",
+        "firstName": "Mianakshi",
+        "lastName": "Sen",
+        "website": "www.anubhavtrainings.com",
+        "email": "contact@anubhavtrainings.com",
+        "status": 1,
+        "regDate": "2024-01-01T00:00:00.000+00:00"
+    },
+    {
+        "code": "4b6c75ef-4cac-4155-8596-91dd1d8737d2",
+        "companyName": "IBM incorporation",
+        "contactPerson": "Ananya",
+        "firstName": "Roger",
+        "lastName": "Morrison",
+        "website": "www.ibm.com",
+        "email": "roger@ibm.com",
+        "status": 1,
+        "regDate": "2024-02-01T00:00:00.000+00:00"
+    },
+    {
+        "code": "0523b608-e609-4e9a-8890-3b22b01b6da0",
+        "companyName": "EY",
+        "contactPerson": "Shivalee",
+        "firstName": "Sakshi",
+        "lastName": "Pradhan",
+        "website": "www.ey.com",
+        "email": "contact@gmail.com",
+        "status": 1,
+        "regDate": "2024-01-01T00:00:00.000+00:00"
+    },
+    {
+        "code": "e38a71ca-c45d-4ec6-afcc-4f34f7facea1",
+        "companyName": "SAP",
+        "contactPerson": "Rohan",
+        "firstName": "Ravikant",
+        "lastName": "Mallipedu",
+        "website": "www.ey.com",
+        "email": "ravi@gmail.com",
+        "status": 1,
+        "regDate": "2024-01-01T00:00:00.000+00:00"
+    },
+    {
+        "code": "60b718c4-de8f-4bb4-b03d-1933a26d3e77",
+        "companyName": "SAP",
+        "contactPerson": "Sushma",
+        "firstName": "Vinutha",
+        "lastName": "Kottipalli",
+        "website": "www.sap.com",
+        "email": "vinutha@gmail.com",
+        "status": 1,
+        "regDate": "2024-01-01T00:00:00.000+00:00"
+    }
+]
